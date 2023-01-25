@@ -1,5 +1,21 @@
 # Microservices Practice
 
+## Program launch order:
+- naming-server
+- api-gateway
+- currency-exchange
+- currency-conversion
+
+## URLs:
+- Currency Exchange Service: http://localhost:8000/currency-exchange/from/USD/to/JPY
+- Currency Conversion Service: http://localhost:8100/currency-conversion/from/USD/to/JPY/quantity/10  
+or http://localhost:8100/currency-conversion-feign/from/USD/to/JPY/quantity/10
+- Eureka: http://localhost:8761/
+- API Gateway: http://localhost:8765/currency-exchange/from/EUR/to/JPY  
+http://localhost:8765/currency-conversion/from/USD/to/JPY/quantity/10  
+http://localhost:8765/currency-conversion-feign/from/USD/to/JPY/quantity/10
+- Zipkin: http://localhost:9411/
+
 ## Running Zipkin on Windows
 - Download Zipkin jar
 ```bash
